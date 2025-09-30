@@ -1,12 +1,22 @@
 const botao = document.getElementById('meu-botao');
 const inputText = document.getElementById('texto');
-const paragrafo = document.getElementsByTagName('p')
-
+const lista = [];
+const container = document.getElementById('meu-container');
+const botaoLista = document.getElementById('minha-lista');
 
 
 botao.addEventListener('click', () => {
-    const novoParagrafo = document.createElement('p');
-    novoParagrafo.innerText = inputText.value;
-    document.body.appendChild(novoParagrafo);
+    const li = document.createElement('li');
+    li.innerText = inputText.value
+    ul.appendChild(li);
+
+    console.log('clicou');
+
     inputText.value = "";
+    lista.push(inputText);
+
 });
+
+botaoLista.addEventListener('click', () => {
+  
+})

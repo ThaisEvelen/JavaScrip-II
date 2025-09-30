@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +11,32 @@
         font-size: 24px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+    #minha-lista {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 24px;
+        cursor: pointer;
+        background-color: palevioletred;
+    }
+
     #meu-botao {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 24px;
         cursor: pointer;
         background-color: aqua;
     }
-     #texto{
+
+    #texto {
         font-size: 24px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-     }
+    }
 </style>
 <body>
     <h1>Clique no botão</h1>
-    <p></p>
+    <div id="meu-container">
+        
+    </div>
     <input id="texto" type="text" placeholder="Digite aqui">
+    <button id="minha-lista">Mostra lista</button>
     <button id="meu-botao">Clicou</button>
     <script src="./index.js"></script>
 </body>
